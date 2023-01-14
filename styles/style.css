@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 0 25px;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+
+}
+
+/* <i class="fa-solid fa-arrow-right"></i> */
+
+/* Nav and Header Styles */
+
+.header-height {
+    margin-top: 25px;
+}
+
+.menu-primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-menu > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu>ul>li {
+    list-style: none;
+    margin-left: 34px;
+}
+
+.logo-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    font-feature-settings: 'liga' off;
+}
+
+/* banner details styles */
+
+.banner-primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.banner-details {
+    margin-top: 16px;
+    width: 582px;
+    height: 270px;
+    margin-bottom: 70px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.banner-description {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 16px;
+
+}
+
+.btn-primary {
+    width: 196px;
+    height: 44px;
+    background: #E02C6D;
+    border-radius: 41px;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: white;
+    border-style: none;
+    margin-top: 16px;
+}
+
+.banner-pic {
+    position: relative;
+    background-image: url(/images/Circle\ design.svg);
+    width: 475px;
+    height: 475px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Seven Logo Container Styles*/
+
+/* .container-logo{
+    margin: 0 auto;
+    justify-content: center;    
+    align-items: center;
+} */
+
+.ecom-logo > ul{
+    display: flex;    
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    justify-content: center;    
+    align-items: center;
+    gap: 25px;
+}
+
+.ecom-logo>ul>li {
+    list-style: none;
+}
+
+.ecom-logo {
+    gap: 60px;
+}
+
+.fade-line {        
+    height: 1px;
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);    
+    margin: 35px 0;    
+}
+
+/* popular collection styles */
+
+.container-popular {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.popular-title {
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    margin: 100px 0 30px 0;
+}
+
+
+.popular-collection-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-box {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 30px;
+    margin: 10px;
+    text-align: left;
+}
+
+.container-popular p {
+    color: #787885;
+    margin: 5px;
+
+}
+
+.popular-box p>i {
+    color: orange;
+}
+
+.popular-box h1 {
+    padding: 16px 6px;
+}
+
+.see-more {
+    width: 100%;
+    max-width: 1300px;
+    margin-top: 50px;
+    color: rgba(224, 44, 109, 0.87);
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+
+.see-more a {
+    text-decoration: none;
+}
+
+/* Feature Place Styles */
+
+.feature-section {
+    display: flex;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.btn-feature {
+    width: 155px;
+    height: 44px;
+    background: #E02C6D;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: white;
+    border-style: none;
+    margin-top: 16px;
+}
+
+.btn-feature a{
+    text-decoration: none;
+    color: white;
+}
+.feature-place{
+    margin-top: 100px;
+    margin-left: 96px;
+}
+
+.feature-photo{
+    margin-top: 100px;    
+}
+
+.feature-title{
+    font-weight: 700;
+font-size: 38px;
+
+}
+.feature-description{
+    color: #6C6C6C;
+    font-size: 16px;
+    margin: 16px 0;
+    font-weight: 700;
+}
+
+/* Footer Text Styles */
+
+footer{
+    background-color: rgb(21, 17, 46);
+    color: white;
+    width: 100%;
+    
+}
+.footer-text{
+    padding-bottom: 3px;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0;
+    
+}
+
+.footer-social{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 17px;
+    gap: 16px;
+}
+
+/* Responsive Styels */
+
+@media only screen and (max-width: 576px) {
+    .menu-primary{
+        flex-direction: column;
+    }
+
+    .banner-primary, .banner-details{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-details{
+        text-align: center;
+        padding: 20px;       
+    }
+
+    .fade-line{
+        display: none;
+    }
+
+    .ecom-logo > ul {                  
+        flex-direction: row;        
+        flex-wrap: wrap;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .popular-collection-details{
+        grid-template-columns: 1fr;
+        align-items: center;
+             
+    }
+
+    .popular-box{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .feature-section {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .feature-place{
+        text-align: center;
+        margin: 0 auto;
+        padding: 25px;
+    }
+}
