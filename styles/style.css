@@ -94,6 +94,8 @@ body {
 .banner-pic {
     position: relative;
     background-image: url(/images/Circle\ design.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 475px;
     height: 475px;
     align-items: center;
@@ -278,30 +280,53 @@ footer {
 @media only screen and (max-width: 576px) {
     .menu-primary {
         flex-direction: column;
+        margin: 0 auto;
     }
 
-    .banner-primary,
-    .banner-details {
+    .nav-menu ul i {
+        margin: 0 auto;
+    }
+
+    .banner-primary {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        align-items: center;
+
+    }
+
+    .banner-pic,
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;       
+
     }
 
     .banner-details {
+        width: 100%;
+        text-align: center;
         align-items: center;
         padding: 0;
-        margin: 0 auto;
+        margin: 50px auto;
     }
 
     .fade-line {
         display: none;
     }
 
+    .ecom-logo {
+        margin: 50px auto;
+    }
+
     .ecom-logo>ul {
         flex-direction: row;
         flex-wrap: wrap;
-        margin-left: 25px;
-        margin-right: 25px;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0 auto;
     }
 
     .popular-collection-details {
@@ -325,7 +350,11 @@ footer {
     .feature-place {
         text-align: center;
         margin: 0 auto;
-        padding: 25px;
+
+    }
+
+    footer {
+        margin: 0 auto;
     }
 }
 
@@ -371,7 +400,7 @@ footer {
         margin-bottom: 20px;
     }
 
-    .feature-section{
+    .feature-section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -385,6 +414,7 @@ footer {
         text-align: center;
         margin: 25px 25px;
     }
+
     .footer-bottom {
         flex-direction: column;
         padding-bottom: 50px;
