@@ -33,7 +33,7 @@ body {
 
 }
 
-.nav-menu > ul{
+.nav-menu>ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,14 +48,14 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-    font-feature-settings: 'liga' off;
+
 }
 
 /* banner details styles */
 
 .banner-primary {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 50px;
 }
@@ -69,7 +69,7 @@ body {
 
 .banner-title {
     font-weight: 700;
-    font-size: 52px;
+    font-size: 3.25rem;
 }
 
 .banner-description {
@@ -109,12 +109,11 @@ body {
     align-items: center;
 } */
 
-.ecom-logo > ul{
-    display: flex;    
-    width: 100%;
-    max-width: 1110px;
+.ecom-logo>ul {
+    display: flex;
+
     margin: 0 auto;
-    justify-content: center;    
+    justify-content: center;
     align-items: center;
     gap: 25px;
 }
@@ -127,10 +126,10 @@ body {
     gap: 60px;
 }
 
-.fade-line {        
+.fade-line {
     height: 1px;
-    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);    
-    margin: 35px 0;    
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+    margin: 35px 0;
 }
 
 /* popular collection styles */
@@ -218,25 +217,27 @@ body {
     margin-top: 16px;
 }
 
-.btn-feature a{
+.btn-feature a {
     text-decoration: none;
     color: white;
 }
-.feature-place{
+
+.feature-place {
     margin-top: 100px;
     margin-left: 96px;
 }
 
-.feature-photo{
-    margin-top: 100px;    
+.feature-photo {
+    margin-top: 100px;
 }
 
-.feature-title{
+.feature-title {
     font-weight: 700;
-font-size: 38px;
+    font-size: 38px;
 
 }
-.feature-description{
+
+.feature-description {
     color: #6C6C6C;
     font-size: 16px;
     margin: 16px 0;
@@ -245,24 +246,26 @@ font-size: 38px;
 
 /* Footer Text Styles */
 
-footer{
+footer {
     background-color: rgb(21, 17, 46);
     color: white;
     width: 100%;
-    
+    height: 100%;
 }
-.footer-text{
+
+.footer-text {
     padding-bottom: 3px;
 }
-.footer-bottom{
+
+.footer-bottom {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 50px 0;
-    
+
 }
 
-.footer-social{
+.footer-social {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -273,39 +276,43 @@ footer{
 /* Responsive Styels */
 
 @media only screen and (max-width: 576px) {
-    .menu-primary{
+    .menu-primary {
         flex-direction: column;
     }
 
-    .banner-primary, .banner-details{
+    .banner-primary,
+    .banner-details {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
 
-    .banner-details{
-        text-align: center;
-        padding: 20px;       
+    .banner-details {
+        align-items: center;
+        padding: 20px;
+        margin: 0 auto;
     }
 
-    .fade-line{
+    .fade-line {
         display: none;
     }
 
-    .ecom-logo > ul {                  
-        flex-direction: row;        
+    .ecom-logo>ul {
+        flex-direction: row;
         flex-wrap: wrap;
         margin-left: 25px;
         margin-right: 25px;
     }
 
-    .popular-collection-details{
-        grid-template-columns: 1fr;
+    .popular-collection-details {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
         align-items: center;
-             
+        margin: 0 auto;
+
     }
 
-    .popular-box{
+    .popular-box {
         margin: 0 auto;
         margin-bottom: 20px;
     }
@@ -315,9 +322,72 @@ footer{
         align-items: center;
     }
 
-    .feature-place{
+    .feature-place {
         text-align: center;
         margin: 0 auto;
         padding: 25px;
     }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .menu-primary {
+        flex-direction: column;
+    }
+
+    .banner-primary,
+    .banner-details {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-details {
+        align-items: center;
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .fade-line {
+        display: none;
+    }
+
+    .ecom-logo>ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 40px 30px;
+    }
+
+    .popular-collection-details {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .popular-box {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .feature-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .feature-place {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 25px 25px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        padding-bottom: 600px;
+    }
+
 }
