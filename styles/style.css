@@ -93,7 +93,7 @@ body {
 
 .banner-pic {
     position: relative;
-    background-image: url('/images/Circle\ design.svg');
+    background-image: url('images/circle_design.svg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 475px;
@@ -304,7 +304,7 @@ footer {
     }
     .banner-pic {
         position: relative;
-        background-image: url('/images/Circle\ design.svg');
+        background-image: url('images/circle_design.svg');
         background-size: cover;
         background-repeat: no-repeat;
         width: 475px;
