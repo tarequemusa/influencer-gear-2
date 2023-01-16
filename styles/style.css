@@ -283,6 +283,14 @@ footer {
         margin: 0 auto;
     }
 
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
     .nav-menu ul i {
         margin: 0 auto;
     }
@@ -294,13 +302,24 @@ footer {
         align-items: center;
 
     }
-
+    .banner-pic {
+        position: relative;
+        background-image: url(/images/Circle\ design.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 475px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    
+    }
     .banner-pic,
     img {
         max-width: 100%;
         margin: 0 auto;
         align-items: center;
-        justify-content: center;       
+        justify-content: center;   
+        padding: 20px;    
 
     }
 
@@ -349,11 +368,15 @@ footer {
 
     .feature-place {
         text-align: center;
+        padding: 20px;
         margin: 0 auto;
 
     }
-
-    footer {
+    .see-more a {
+        text-decoration: none;
+        padding: 0 20px;
+    }
+    .footer {
         margin: 0 auto;
     }
 }
@@ -392,9 +415,11 @@ footer {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-
     }
-
+    .see-more {        
+        margin-bottom: 0px;
+        padding: 0 20px;
+    }
     .popular-box {
         margin: 0 auto;
         margin-bottom: 20px;
@@ -413,6 +438,9 @@ footer {
         align-items: center;
         text-align: center;
         margin: 25px 25px;
+    }
+    .feature-photo img{
+        padding: 20px;
     }
 
     .footer-bottom {
